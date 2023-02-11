@@ -6,7 +6,7 @@ import { Configuration, OpenAIApi } from 'openai'
 
 dotenv.config()
 
-console.log(process.env.OPENAI_API_KEY)
+dotenv.config({path:'/etc/secrets/.env'})
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
